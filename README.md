@@ -1,3 +1,4 @@
+Local Tests
 
 Test 0: replay attack (similarity score = 1.0)
 
@@ -12,3 +13,8 @@ python behavio.py eval  --models-dir ./models --csv session_mickey_1.csv --usern
 Test 2: unsually slow typing speed (low similarity score = 0.09811024818851996)
 
 python behavio.py eval  --models-dir ./models --csv session_mickey_2.csv --username "Mickey Mouse" --contract "795131459" --out-csv ./scores_mickey_2.csv 
+
+
+Remote Tests
+
+python behavio_client.py eval --csv session_mickey_0.csv --username "Mickey Mouse" --contract "795131459" --explain --topN 10
