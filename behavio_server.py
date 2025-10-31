@@ -542,4 +542,4 @@ def eval_endpoint(req: EvalRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("behavio_server2:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run("behavio_server:app", host="0.0.0.0", port=8000, reload=False)
